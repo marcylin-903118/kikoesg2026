@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KIKŌ ESG 行動方案｜二仁溪流域企業永續合作</title>
+<meta name="description" content="KIKŌ 串聯二仁溪流域的濕地、竹林與地方社區，提供企業濕地保育、員工參與、循環共創與綠色採購四大 ESG 行動方案，對接 ESG 評鑑揭露。">
+<meta property="og:title" content="KIKŌ ESG 行動方案">
+<meta property="og:description" content="濕地保育、員工參與、循環共創、綠色採購——讓企業的 ESG 行動留下可被揭露的成果。">
+<meta property="og:image" content="img/hero-wetland.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap">
+<style>
+:root{
+  --paper:#F4F1EC; --card:#FAF8F4; --ink:#2B2622; --muted:#5E574F;
+  --line:#DCD5CB; --line2:#CFC7BC; --moss:#5B6236; --moss-soft:#E3E4D8;
+  --clay:#AD6433; --sand:#C29A6E; --band:#E3E2D6;
+  --serif:'Noto Serif TC',serif; --sans:'Noto Sans TC',sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--moss)} a:hover{color:var(--ink)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--serif);line-height:1.3;margin:0;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(244,241,236,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:20px;height:60px}
+.brand{font-size:13px;letter-spacing:.3em;font-weight:700;color:var(--ink);text-decoration:none;white-space:nowrap}
+.nav{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{white-space:nowrap;text-decoration:none;color:var(--muted);font-size:14px;padding:8px 10px;border-radius:8px}
+.nav a:hover{background:var(--band);color:var(--ink)}
+.nav a.cta{background:var(--ink);color:var(--paper)}
+@media (max-width:640px){.top .wrap{gap:10px}.brand{letter-spacing:.15em}.nav a:not(.cta){display:none}}
+
+/* hero */
+.hero{padding:56px 0 40px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+.eyebrow{font-size:12px;letter-spacing:.32em;color:var(--muted)}
+.hero h1{font-size:clamp(32px,5vw,52px);font-weight:900;margin-top:14px}
+.hero p.lead{margin-top:18px;font-size:17px;color:var(--muted);max-width:34em}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 22px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;border:1.5px solid var(--ink)}
+.btn.solid{background:var(--ink);color:var(--paper)} .btn.solid:hover{background:#000;color:var(--paper)}
+.btn.ghost{color:var(--ink)} .btn.ghost:hover{background:var(--band)}
+.hero-img{border-radius:180px 24px 180px 24px;overflow:hidden;aspect-ratio:4/3}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+@media (max-width:820px){.hero .wrap{grid-template-columns:1fr;gap:28px}.hero{padding-top:32px}.hero-img{border-radius:120px 18px 120px 18px}}
+
+/* ESG band */
+.esg{background:var(--band);padding:34px 0}
+.esg h2{font-size:20px}
+.esg-grid{margin-top:16px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.esg-item{background:var(--card);border-radius:14px;padding:14px 16px}
+.tag{display:inline-block;background:var(--ink);color:var(--paper);font-size:12px;font-weight:700;padding:2px 10px;border-radius:10px}
+.esg-item b{display:block;margin-top:8px;font-size:15px}
+.esg-item span{display:block;font-size:13px;color:var(--muted);line-height:1.55;margin-top:2px}
+.esg-item .tag{display:inline-block;color:var(--paper);font-size:12px;margin-top:0}
+@media (max-width:900px){.esg-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.esg-grid{grid-template-columns:1fr}}
+
+/* plan sections */
+.plan{padding:72px 0 24px}
+.plan-head{display:flex;flex-direction:column;gap:10px;max-width:760px}
+.plan-no{font-size:13px;letter-spacing:.24em;color:var(--clay);font-weight:700}
+.plan h2{font-size:clamp(26px,3.6vw,38px);font-weight:900}
+.plan-sub{color:var(--moss);font-family:var(--serif);font-size:17px;letter-spacing:.06em}
+.plan-intro{color:var(--muted);margin-top:4px}
+.plan-media{margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.plan-media img{width:100%;height:260px;object-fit:cover;border-radius:18px}
+.plan-media img:first-child{border-radius:120px 18px 18px 18px}
+.plan-media img:last-child{border-radius:18px 18px 120px 18px}
+.plan-media.single{grid-template-columns:1fr}
+.plan-media.single img{height:300px;border-radius:150px 18px 150px 18px}
+@media (max-width:640px){.plan-media{grid-template-columns:1fr}.plan-media img{height:200px}.plan-media.single img{height:200px;border-radius:90px 14px 90px 14px}}
+
+.cards{margin-top:22px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.cards.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:900px){.cards,.cards.two{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px 22px 20px;display:flex;flex-direction:column}
+.card .kind{font-size:12px;letter-spacing:.18em;color:var(--clay);font-weight:700}
+.card h3{font-size:22px;margin-top:6px}
+.price{margin-top:12px;padding:10px 0;border-top:1px solid var(--sand);border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.price strong{font-size:30px;font-family:var(--sans);font-weight:700;line-height:1.2}
+.price em{font-style:normal;font-size:14px;color:var(--muted)}
+.card ul{margin:12px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;font-size:15px}
+.card li{padding-left:18px;position:relative}
+.card li::before{content:"";position:absolute;left:2px;top:.72em;width:7px;height:7px;border-radius:50%;background:var(--moss)}
+.card .note{margin-top:auto;padding-top:14px;font-size:13px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chip{background:var(--moss-soft);border-radius:999px;padding:3px 12px;font-size:13px}
+.chip.local{background:transparent;border:1px solid var(--sand);color:var(--clay)}
+.esg-line{margin-top:18px;background:var(--band);border-radius:999px;padding:12px 22px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;font-size:14px}
+.esg-line b{letter-spacing:.06em}
+@media (max-width:640px){.esg-line{border-radius:16px}}
+
+/* case */
+.case{margin-top:22px;display:grid;grid-template-columns:1.1fr 1fr;background:var(--card);border:1px solid var(--line);border-radius:24px;overflow:hidden}
+.case img{width:100%;height:100%;min-height:260px;object-fit:cover}
+.case div{padding:28px 30px;display:flex;flex-direction:column;gap:10px}
+.case h3{font-size:24px}
+.case .who{font-size:13px;color:var(--moss)}
+@media (max-width:820px){.case{grid-template-columns:1fr}.case img{min-height:0;height:220px}}
+
+/* steps */
+.steps{margin-top:22px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;counter-reset:s}
+.step{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+.step b{display:flex;align-items:center;gap:10px;font-size:17px}
+.step b::before{counter-increment:s;content:counter(s);flex:none;width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--paper);display:grid;place-items:center;font-size:14px}
+.step span{display:block;margin-top:6px;color:var(--muted);font-size:14px}
+@media (max-width:820px){.steps{grid-template-columns:1fr}}
+
+.divider{height:1px;background:var(--line2);margin-top:56px}
+
+/* form */
+.contact{padding:80px 0 72px}
+.contact .wrap{display:grid;grid-template-columns:.9fr 1.3fr;gap:48px;align-items:start}
+@media (max-width:900px){.contact .wrap{grid-template-columns:1fr;gap:28px}}
+.contact-side h2{font-size:clamp(26px,3.6vw,36px);font-weight:900}
+.contact-side p{margin-top:14px;color:var(--muted)}
+.contact-side ol{margin:18px 0 0;padding-left:20px;color:var(--muted);font-size:15px}
+form{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:26px}
+@media (max-width:480px){form{padding:20px 16px}}
+fieldset{border:0;margin:0;padding:0}
+fieldset+fieldset{margin-top:22px;padding-top:20px;border-top:1px solid var(--line)}
+legend{font-family:var(--serif);font-weight:700;font-size:18px;padding:0;margin-bottom:12px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px}
+@media (max-width:560px){.grid2{grid-template-columns:1fr}}
+.field{display:flex;flex-direction:column;gap:5px}
+.field.full{grid-column:1/-1}
+label.lbl,.lbl{font-size:14px;font-weight:500}
+.req{color:var(--clay);margin-left:2px}
+input[type=text],input[type=email],input[type=tel],input[type=number],select,textarea{font:inherit;font-size:16px;color:var(--ink);background:#fff;border:1px solid #BDB3A6;border-radius:10px;padding:10px 12px;min-height:44px;width:100%}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--moss);outline-offset:1px;border-color:var(--moss)}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;width:1px;height:1px}
+.opt span{display:inline-flex;align-items:center;min-height:40px;padding:6px 14px;border:1px solid #BDB3A6;border-radius:999px;background:#fff;font-size:14px;cursor:pointer;user-select:none}
+.opt input:checked+span{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.opt input:focus-visible+span{outline:2px solid var(--moss);outline-offset:2px}
+.plan-pick{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:560px){.plan-pick{grid-template-columns:1fr}}
+.plan-pick .opt span{width:100%;border-radius:14px;min-height:54px;flex-direction:column;align-items:flex-start;justify-content:center;padding:8px 14px;line-height:1.35}
+.plan-pick .opt small{font-size:12px;opacity:.75}
+.extra{display:none;margin-top:14px;background:var(--paper);border-radius:16px;padding:16px}
+.extra.on{display:block}
+.extra h4{margin:0 0 10px;font-family:var(--serif);font-size:15px}
+.extra .grid2{gap:12px}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--muted);line-height:1.6;margin-top:18px}
+.consent input{margin-top:3px;width:18px;height:18px;flex:none;accent-color:var(--ink)}
+.submit{margin-top:18px;width:100%;justify-content:center;font-size:16px;cursor:pointer}
+.submit[disabled]{opacity:.6;cursor:wait}
+.status{margin-top:14px;font-size:15px;border-radius:12px;padding:0}
+.status.ok{background:var(--moss-soft);padding:14px 16px}
+.status.err{background:#F6E3D8;padding:14px 16px}
+.hp{position:absolute;left:-9999px}
+
+footer{border-top:1px solid var(--line2);padding:28px 0 40px;font-size:13px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="top">
+<div class="wrap">
+<a class="brand" href="#">KIKŌ · ESG ACTION</a>
+<nav class="nav" aria-label="方案導覽">
+<a href="#plan1">濕地保育</a>
+<a href="#plan2">員工參與</a>
+<a href="#plan3">循環共創</a>
+<a href="#plan4">綠色採購</a>
+<a href="#contact" class="cta">合作洽詢</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="wrap">
+<div>
+<div class="eyebrow">KIKŌ · ESG ACTION PROGRAM</div>
+<h1>從濕地到竹林，讓企業的 ESG 行動被看見</h1>
+<p class="lead">我們串聯二仁溪流域的濕地、竹林與地方社區，為企業設計可執行、可量化、可寫進永續報告書的環境與社會行動。</p>
+<div class="btns">
+<a class="btn solid" href="#plan1">看四大方案</a>
+<a class="btn ghost" href="#contact">留下合作需求</a>
+</div>
+</div>
+<div class="hero-img"><img src="img/hero-wetland.jpg" alt="企業團體在紅樹林濕地中進行走讀" width="1060" height="768"></div>
+</div>
+</section>
+
+<section class="esg" aria-labelledby="esg-title">
+<div class="wrap">
+<h2 id="esg-title">對接 ESG 評鑑，提供可直接引用的揭露素材</h2>
+<div class="esg-grid">
+<div class="esg-item"><span class="tag">E-6</span><b>循環經濟</b><span>採購再生材料、推動減塑與資源循環</span></div>
+<div class="esg-item"><span class="tag">E-14</span><b>生物多樣性</b><span>棲地營造、物種監測與保育行動成效</span></div>
+<div class="esg-item"><span class="tag">E-15</span><b>自然碳匯</b><span>對應國家自然碳匯戰略之濕地與竹林行動</span></div>
+<div class="esg-item"><span class="tag">S-21</span><b>員工培訓與發展</b><span>環境教育與志工參與時數</span></div>
+<div class="esg-item"><span class="tag">G-32</span><b>永續成效揭露</b><span>參與人次、守護面積、採購金額等量化績效</span></div>
+</div>
+</div>
+</section>
+
+<!-- 方案一 -->
+<section class="plan" id="plan1" aria-labelledby="p1-title">
+<div class="wrap">
+<div class="plan-head">
+<div class="plan-no">方案一</div>
+<h2 id="p1-title">生物多樣性與濕地保育</h2>
+<div class="plan-sub">生態調查 × 棲地維護 × 指標物種監測 × 保育教育</div>
+<p class="plan-intro">以白砂崙濕地與茄萣濕地為場域，從一季一次的保育行動，到全年守護一片濕地，讓企業的支持留下看得見、可追蹤的成果。</p>
+</div>
+<div class="plan-media">
+<img src="img/p1-restoration.jpg" alt="解說員在濕地向參與者說明植物復育" loading="lazy">
+<img src="img/p1-boardwalk.jpg" alt="企業團隊在紅樹林步道進行濕地走讀" loading="lazy">
+</div>
+<div class="cards two">
+<article class="card">
+<div class="kind">專案行動型</div>
+<h3>春秋兩季，延續性保育行動</h3>
+<div class="price"><strong>$13萬起</strong><em>2 季 2 場合計・每場 20 人起</em></div>
+<ul>
+<li>白砂崙濕地，二仁溪環境教育 ＋ 保育主題</li>
+<li>主題：濕地走讀、濕地植物復育、外來種移除</li>
+<li>交付：工作成果、影片紀錄、成效指標（復育株數、外來種移除量）</li>
+</ul>
+</article>
+<article class="card">
+<div class="kind">年度夥伴型</div>
+<h3>守護一片濕地，陪它走過四季</h3>
+<div class="price"><strong>$80萬起</strong><em>／年・茄萣濕地大山區分區守護</em></div>
+<ul>
+<li>約 27 公頃濕地，分區投入棲地營造與巡守</li>
+<li>全年生態監測：水質、鳥類、水域生物、植被</li>
+<li>交付：監測報告、執行紀錄、入校宣導、年度成果報告與揭露用指標摘要</li>
+<li>夥伴加贈 2 場生態監測公民科學活動</li>
+</ul>
+<p class="note">亦可洽詢全區獨家守護方案。</p>
+</article>
+</div>
+<div class="esg-line"><b>對接 ESG 評鑑</b><span>E-14 生物多樣性・E-15 自然碳匯・G-32 永續成效揭露</span></div>
+</div>
+</section>
+
+<!-- 方案二 -->
+<section class="plan" id="plan2" aria-labelledby="p2-title">
+<div class="wrap">
+<div class="divider" style="margin-top:0;margin-bottom:56px"></div>
+<div class="plan-head">
+<div class="plan-no">方案二</div>
+<h2 id="p2-title">企業志工與員工參與</h2>
+<div class="plan-sub">環境教育 × 竹林守護 × 社區共好 × 員工參與</div>
+<p class="plan-intro">從茄萣、湖內的濕地與社區，到龍崎、田寮的竹林與惡地，讓員工親身參與環境行動與地方交流。</p>
+</div>
+<div class="plan-media">
+<img src="img/p2-beach-cleanup.jpg" alt="參與者以夾子進行淨灘撿拾" loading="lazy">
+<img src="img/p2-classroom.jpg" alt="社區活動中心的二仁溪環境教育課程" loading="lazy">
+</div>
+<div class="cards">
+<article class="card">
+<div class="kind">A 單次體驗型</div>
+<h3>一個下午，帶團隊走進濕地</h3>
+<div class="price"><strong>$4萬起</strong><em>半日活動・20–30 人起</em></div>
+<ul>
+<li>二仁溪環境教育室內課程，任選兩個體驗模組</li>
+<li>適合員工家庭日、環境行動工作坊</li>
+</ul>
+<div class="chips">
+<span class="chip">棲地走讀</span><span class="chip">淨灘行動</span>
+<span class="chip local">療癒綠植組盆 #在地青農</span>
+<span class="chip local">附生植物上板課 #在地青農</span>
+<span class="chip">花圈手作</span><span class="chip">在地食農風味餐</span>
+</div>
+<p class="note">植栽皆來自在地青農培育；亦可依需求客製主題活動。</p>
+</article>
+<article class="card">
+<div class="kind">B 主題行動型</div>
+<h3>疏一片竹林，讓它重新呼吸</h3>
+<div class="price"><strong>$15萬起</strong><em>50 人・1 天</em></div>
+<ul>
+<li>龍崎、田寮竹林，認識竹林經營與全竹利用</li>
+<li>資助 1–2 公頃竹林疏伐，由專業竹農執行</li>
+<li>竹林走讀、竹材整理分類、竹藝手作與在地風味餐</li>
+</ul>
+<p class="note">對應國家自然碳匯戰略「森林 2-2」老化竹林更新。</p>
+</article>
+<article class="card">
+<div class="kind">C 深度共好型</div>
+<h3>兩天一夜，走進惡地的日常</h3>
+<div class="price"><strong>$30萬起</strong><em>2 梯合計・每梯 15 人・含食宿</em></div>
+<ul>
+<li>串聯新化、龍崎、田寮，夜宿新化林場</li>
+<li>食農教育與在地料理、竹林走讀與竹炭循環參訪</li>
+<li>專業人員帶領生態觀察與簡易調查</li>
+</ul>
+<p class="note">可設計主題 team building 活動。</p>
+</article>
+</div>
+<div class="esg-line"><b>對接 ESG 評鑑</b><span>E-14 生物多樣性・E-15 自然碳匯・S-21 員工培訓與發展・G-32 永續成效揭露</span></div>
+</div>
+</section>
+
+<!-- 方案三 -->
+<section class="plan" id="plan3" aria-labelledby="p3-title">
+<div class="wrap">
+<div class="divider" style="margin-top:0;margin-bottom:56px"></div>
+<div class="plan-head">
+<div class="plan-no">方案三</div>
+<h2 id="p3-title">地方循環經濟與綠色創新</h2>
+<div class="plan-sub">副產物循環 × 循環材料 × 品牌共創 × 旅宿共創</div>
+<p class="plan-intro">把疏伐竹材、海廢竹與產業副產物，轉化為企業品牌的循環產品與在地體驗。</p>
+</div>
+<div class="cards two">
+<article class="card">
+<img src="img/p3-planting-kit.jpg" alt="KIKŌ 香草種植組：再生竹盆器與禮盒包裝" loading="lazy" style="border-radius:14px;height:220px;width:100%;object-fit:cover;object-position:50% 72%;margin-bottom:16px">
+<div class="kind">3-A 品牌共創・製造業與品牌商</div>
+<h3>從竹林與海岸，長出你的產品線</h3>
+<div class="price"><strong>開模 $15萬起</strong><em>工作坊與量產依需求報價</em></div>
+<ul>
+<li>副產物循環工作坊、企業與地方供應鏈媒合</li>
+<li>循環材料概念驗證、OEM／ODM 開發</li>
+<li>交付：材料規格與打樣、產品故事與循環說明</li>
+</ul>
+</article>
+<article class="card">
+<img src="img/p3-hotel.jpg" alt="旅宿客房裡的竹材迎賓水果盤" loading="lazy" style="border-radius:14px;height:220px;width:100%;object-fit:cover;margin-bottom:16px">
+<div class="kind">3-B 旅宿共創・仁德、灣裡、台南旅宿</div>
+<h3>讓住客帶走一段在地故事</h3>
+<div class="price"><strong>依需求報價</strong><em>可單獨或組合合作</em></div>
+<ul>
+<li>客房器皿：迎賓水果盤、餐盤等再生竹材器物</li>
+<li>住客走讀：二仁溪濕地、竹林在地行程</li>
+<li>聯名伴手禮：旅宿 × KIKŌ 在地禮盒</li>
+</ul>
+</article>
+</div>
+<div class="steps">
+<div class="step"><b>共創工作坊</b><span>盤點副產物與在地材料，找出合作題目</span></div>
+<div class="step"><b>打樣・概念驗證</b><span>開模打樣、材料規格與產品故事</span></div>
+<div class="step"><b>量產・長期合作</b><span>OEM／ODM 量產、旅宿器物長期供應</span></div>
+</div>
+<article class="case">
+<img src="img/p3-tray-box.jpg" alt="海廢竹再生托盤與禮盒包裝" loading="lazy">
+<div>
+<div class="kind" style="font-size:12px;letter-spacing:.18em;color:var(--clay);font-weight:700">合作案例</div>
+<h3>海廢竹再生托盤</h3>
+<p>回收海岸廢棄蚵架竹材，再生製成托盤並完成禮盒包裝，讓海廢成為地方特色禮品。同樣的流程，可以複製到你的品牌。</p>
+<div class="who">合作單位：臺南市漁港及近海管理所・龍崎區農會</div>
+</div>
+</article>
+<div class="esg-line"><b>對接 ESG 評鑑</b><span>E-6 循環經濟與廢棄物管理・G-32 永續成效揭露</span></div>
+</div>
+</section>
+
+<!-- 方案四 -->
+<section class="plan" id="plan4" aria-labelledby="p4-title">
+<div class="wrap">
+<div class="divider" style="margin-top:0;margin-bottom:56px"></div>
+<div class="plan-head">
+<div class="plan-no">方案四</div>
+<h2 id="p4-title">綠色採購・國產竹材升級再造</h2>
+<div class="plan-sub">低碳禮贈 × 減塑辦公室 × 年度綠色採購</div>
+<p class="plan-intro">兩個品牌，一份綠色採購：KIKŌ 的莿竹再生生活器物，與合作品牌竹光生活的全竹循環好物。</p>
+</div>
+<div class="cards two">
+<article class="card">
+<img src="img/p4-desk.jpg" alt="辦公桌上的莿竹再生收納小物" loading="lazy" style="border-radius:14px;height:220px;width:100%;object-fit:cover;margin-bottom:16px">
+<div class="kind">KIKŌ 莿竹再生系列</div>
+<h3>減塑辦公室・年度採購・企業客製</h3>
+<div class="price"><strong>依需求報價</strong><em>認購 500 套以上，贈企業內部永續設計講座 1 場</em></div>
+<ul>
+<li>FSC 認證，產品可做 FSC 標示，可列入綠色採購申報</li>
+<li>莿竹疏伐材再生，含 50% 竹材料；餐具與便當盒通過食品容器檢測</li>
+</ul>
+<div class="chips"><span class="chip">低碳餐具組</span><span class="chip">便當盒</span><span class="chip">托盤・備品盤</span><span class="chip">植栽板・盆器</span><span class="chip">蠟燭杯</span><span class="chip">寵物碗</span></div>
+</article>
+<article class="card">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px">
+<img src="img/p4-dessert.jpg" alt="竹炭點心禮盒" loading="lazy" style="border-radius:14px;height:220px;width:100%;object-fit:cover">
+<img src="img/p4-salt.jpg" alt="風味竹鹽" loading="lazy" style="border-radius:14px;height:220px;width:100%;object-fit:cover">
+</div>
+<div class="kind">合作品牌・竹光生活（山海屯社會企業）</div>
+<h3>節慶禮贈：把一整株竹子，變成一份好禮</h3>
+<div class="price"><strong>依需求報價</strong><em>禮盒可客製</em></div>
+<ul>
+<li>經濟部社會創新組織登錄，採購金額可作為永續揭露素材</li>
+<li>全竹循環：疏伐竹材、筍殼與竹筍開發成在地好物</li>
+<li>竹炭點心使用龍崎農會食用級竹炭粉</li>
+</ul>
+<div class="chips"><span class="chip">竹炭點心</span><span class="chip">風味竹鹽</span><span class="chip">竹筍水餃・筍乾</span><span class="chip">擴香石</span><span class="chip">竹真露</span></div>
+</article>
+</div>
+<div class="esg-line"><b>對接 ESG 評鑑</b><span>E-6 循環經濟與廢棄物管理・G-32 永續成效揭露</span></div>
+</div>
+</section>
+
+<!-- 表單 -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+<div class="wrap">
+<div class="contact-side">
+<div class="eyebrow">CONTACT</div>
+<h2 id="contact-title" style="margin-top:10px">告訴我們你的需求</h2>
+<p>以上價格皆為起始參考價。留下需求後，我們會依人數、時程與場域，提供完整方案與報價。</p>
+<ol>
+<li>填寫表單（約 2 分鐘）</li>
+<li>我們以 Email 與你聯繫，確認細節</li>
+<li>提供客製方案與正式報價</li>
+</ol>
+<p style="margin-top:22px;font-size:15px">想直接聊聊？<br>PM Marcy Lin　<a href="tel:+886919507709">0919-507-709</a><br>LINE ID　<a href="https://line.me/ti/p/~marcylin" target="_blank" rel="noopener">marcylin</a></p>
+</div>
+
+<form id="leadForm" novalidate>
+<input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+<input type="hidden" name="from_name" value="KIKŌ ESG 網站">
+<input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+<fieldset>
+<legend>聯絡資訊</legend>
+<div class="grid2">
+<div class="field"><label class="lbl" for="f-name">姓名<span class="req">*</span></label><input id="f-name" name="姓名" type="text" required autocomplete="name"></div>
+<div class="field"><label class="lbl" for="f-company">公司名稱<span class="req">*</span></label><input id="f-company" name="公司名稱" type="text" required autocomplete="organization"></div>
+<div class="field"><label class="lbl" for="f-title">部門／職稱</label><input id="f-title" name="部門職稱" type="text" autocomplete="organization-title"></div>
+<div class="field"><label class="lbl" for="f-phone">電話</label><input id="f-phone" name="電話" type="tel" autocomplete="tel"></div>
+<div class="field full"><label class="lbl" for="f-email">Email<span class="req">*</span></label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>感興趣的方案<span class="req">*</span><span style="font-family:var(--sans);font-weight:400;font-size:13px;color:var(--muted);margin-left:8px">可複選</span></legend>
+<div class="plan-pick" role="group" aria-label="感興趣的方案">
+<label class="opt"><input type="checkbox" name="plan" value="方案一 濕地保育" data-extra="x1"><span>方案一｜濕地保育<small>專案行動・年度夥伴</small></span></label>
+<label class="opt"><input type="checkbox" name="plan" value="方案二 員工參與" data-extra="x2"><span>方案二｜員工參與<small>半日體驗・竹林守護・惡地共好</small></span></label>
+<label class="opt"><input type="checkbox" name="plan" value="方案三 循環共創" data-extra="x3"><span>方案三｜循環共創<small>品牌共創・旅宿共創</small></span></label>
+<label class="opt"><input type="checkbox" name="plan" value="方案四 綠色採購" data-extra="x4"><span>方案四｜綠色採購<small>KIKŌ・竹光生活</small></span></label>
+</div>
+
+<div class="extra" id="x1">
+<h4>方案一｜濕地保育</h4>
+<div class="grid2">
+<div class="field"><label class="lbl" for="x1-type">合作形式</label>
+<select id="x1-type" name="方案一_形式"><option value="">請選擇</option><option>專案行動型（兩季）</option><option>年度夥伴型（分區守護）</option><option>全區獨家守護</option><option>尚未決定</option></select></div>
+<div class="field"><label class="lbl" for="x1-people">每場預計人數</label><input id="x1-people" name="方案一_人數" type="text" placeholder="例：30 人"></div>
+</div>
+</div>
+
+<div class="extra" id="x2">
+<h4>方案二｜員工參與</h4>
+<div class="grid2">
+<div class="field"><label class="lbl" for="x2-type">活動類型</label>
+<select id="x2-type" name="方案二_類型"><option value="">請選擇</option><option>A 單次體驗型（半日）</option><option>B 竹林守護（一日）</option><option>C 惡地深度共好（兩天一夜）</option><option>客製活動</option></select></div>
+<div class="field"><label class="lbl" for="x2-people">預計人數</label><input id="x2-people" name="方案二_人數" type="text" placeholder="例：50 人"></div>
+<div class="field full"><label class="lbl" for="x2-when">希望的月份或季節</label><input id="x2-when" name="方案二_時間" type="text" placeholder="例：明年春天、4 月"></div>
+</div>
+</div>
+
+<div class="extra" id="x3">
+<h4>方案三｜循環共創</h4>
+<div class="grid2">
+<div class="field"><label class="lbl" for="x3-type">合作方向</label>
+<select id="x3-type" name="方案三_方向"><option value="">請選擇</option><option>3-A 品牌共創（OEM／ODM）</option><option>3-B 旅宿共創</option><option>先從共創工作坊開始</option></select></div>
+<div class="field"><label class="lbl" for="x3-qty">預計數量／房數</label><input id="x3-qty" name="方案三_數量" type="text" placeholder="例：1,000 件／40 間房"></div>
+<div class="field full"><label class="lbl" for="x3-idea">想開發的產品或使用情境</label><input id="x3-idea" name="方案三_構想" type="text" placeholder="例：企業贈品、客房迎賓水果盤"></div>
+</div>
+</div>
+
+<div class="extra" id="x4">
+<h4>方案四｜綠色採購</h4>
+<div class="field"><span class="lbl">有興趣的品項</span>
+<div class="opts" role="group" aria-label="有興趣的品項">
+<label class="opt"><input type="checkbox" name="方案四_品項" value="減塑辦公室（KIKŌ）"><span>減塑辦公室（KIKŌ）</span></label>
+<label class="opt"><input type="checkbox" name="方案四_品項" value="年度採購・企業客製（KIKŌ）"><span>年度採購・企業客製（KIKŌ）</span></label>
+<label class="opt"><input type="checkbox" name="方案四_品項" value="節慶禮盒（竹光生活）"><span>節慶禮盒（竹光生活）</span></label>
+</div></div>
+<div class="grid2" style="margin-top:12px">
+<div class="field"><label class="lbl" for="x4-qty">預計數量</label><input id="x4-qty" name="方案四_數量" type="text" placeholder="例：200 套"></div>
+<div class="field"><label class="lbl" for="x4-fsc">需要 FSC 標示？</label>
+<select id="x4-fsc" name="方案四_FSC"><option value="">請選擇</option><option>需要</option><option>不需要</option><option>不確定</option></select></div>
+</div>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>需求與時程</legend>
+<div class="grid2">
+<div class="field"><label class="lbl" for="f-when">預計執行時間</label>
+<select id="f-when" name="執行時程"><option value="">請選擇</option><option>本季</option><option>下一季</option><option>明年度</option><option>尚未確定</option></select></div>
+<div class="field"><label class="lbl" for="f-budget">預算範圍</label>
+<select id="f-budget" name="預算"><option value="">請選擇</option><option>10 萬以下</option><option>10–50 萬</option><option>50–100 萬</option><option>100 萬以上</option><option>尚未確定</option></select></div>
+<div class="field full"><span class="lbl">希望對接的揭露項目</span>
+<div class="opts" role="group" aria-label="希望對接的揭露項目">
+<label class="opt"><input type="checkbox" name="關注指標" value="E-6"><span>E-6 循環經濟</span></label>
+<label class="opt"><input type="checkbox" name="關注指標" value="E-14"><span>E-14 生物多樣性</span></label>
+<label class="opt"><input type="checkbox" name="關注指標" value="E-15"><span>E-15 自然碳匯</span></label>
+<label class="opt"><input type="checkbox" name="關注指標" value="S-21"><span>S-21 員工培訓</span></label>
+<label class="opt"><input type="checkbox" name="關注指標" value="G-32"><span>G-32 成效揭露</span></label>
+<label class="opt"><input type="checkbox" name="關注指標" value="綠色採購申報"><span>綠色採購申報</span></label>
+<label class="opt"><input type="checkbox" name="關注指標" value="尚未確定"><span>尚未確定</span></label>
+</div></div>
+<div class="field full"><label class="lbl" for="f-role">你在這次合作中的角色</label>
+<select id="f-role" name="角色"><option value="">請選擇</option><option>決策者</option><option>提案／建議者</option><option>窗口／執行者</option><option>先了解資訊</option></select></div>
+<div class="field full"><label class="lbl" for="f-msg">其他想讓我們知道的事</label><textarea id="f-msg" name="留言" placeholder="例：希望結合公司週年活動、需要中英文成果報告…"></textarea></div>
+</div>
+</fieldset>
+
+<label class="consent"><input type="checkbox" id="f-consent" required><span>我同意 KIKŌ 蒐集以上資料，僅用於本次合作洽詢之聯繫與方案資訊提供，不作其他用途；我可隨時要求查詢、更正或刪除。<span class="req">*</span></span></label>
+
+<button type="submit" class="btn solid submit" id="submitBtn">送出需求</button>
+<div class="status" id="status" role="status" aria-live="polite"></div>
+</form>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<div>
+<div style="font-weight:700;color:var(--ink);letter-spacing:.06em">KIKO Co-Operation</div>
+<div>二仁溪資本共創ESG平台</div>
+</div>
+<div>
+<div>聯絡窗口　PM Marcy Lin</div>
+<div>電話 <a href="tel:+886919507709">0919-507-709</a>　LINE ID <a href="https://line.me/ti/p/~marcylin" target="_blank" rel="noopener">marcylin</a></div>
+</div>
+<div style="flex-basis:100%;margin-top:8px">價格皆為起始參考價，實際內容與費用依正式報價單為準。</div>
+</div>
+</footer>
+
+<script>
+(function(){
+  var form=document.getElementById('leadForm');
+  var statusEl=document.getElementById('status');
+  var btn=document.getElementById('submitBtn');
+
+  // 依勾選的方案顯示對應的補充問題
+  form.querySelectorAll('input[name="plan"]').forEach(function(cb){
+    cb.addEventListener('change',function(){
+      document.getElementById(cb.dataset.extra).classList.toggle('on',cb.checked);
+    });
+  });
+
+  function show(msg,cls){statusEl.className='status '+cls;statusEl.textContent=msg;}
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var plans=[].slice.call(form.querySelectorAll('input[name="plan"]:checked')).map(function(c){return c.value;});
+    var required=['f-name','f-company','f-email'];
+    for(var i=0;i<required.length;i++){
+      var el=document.getElementById(required[i]);
+      if(!el.value.trim()||!el.checkValidity()){el.focus();show('請填寫姓名、公司名稱與有效的 Email。','err');return;}
+    }
+    if(!plans.length){show('請至少選擇一個感興趣的方案。','err');form.querySelector('input[name="plan"]').focus();return;}
+    if(!document.getElementById('f-consent').checked){show('請勾選同意個人資料使用說明。','err');document.getElementById('f-consent').focus();return;}
+
+    // 組成送出內容：只送出有填寫、且屬於已勾選方案的欄位
+    var data={};
+    form.querySelectorAll('input,select,textarea').forEach(function(el){
+      if(!el.name||el.name==='plan'||el.id==='f-consent')return;
+      var box=el.closest('.extra');
+      if(box&&!box.classList.contains('on'))return;
+      if(el.type==='checkbox'){
+        if(el.name==='botcheck'){data.botcheck=el.checked;return;}
+        if(!el.checked)return;
+        data[el.name]=data[el.name]?data[el.name]+'、'+el.value:el.value;
+        return;
+      }
+      if(el.type==='hidden'||el.value.trim()!=='')data[el.name]=el.value.trim();
+    });
+    data['感興趣的方案']=plans.join('、');
+    data.subject='【ESG 合作洽詢】'+data['公司名稱']+'｜'+plans.join('、');
+
+    btn.disabled=true;btn.textContent='送出中…';show('','');
+    fetch('https://api.web3forms.com/submit',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify(data)
+    }).then(function(r){return r.json();}).then(function(res){
+      if(res.success){
+        form.querySelectorAll('fieldset,.consent,.submit').forEach(function(n){n.style.display='none';});
+        show('謝謝你！我們已收到需求，會在 3 個工作天內以 Email 與你聯繫。','ok');
+      }else{throw new Error(res.message||'error');}
+    }).catch(function(){
+      btn.disabled=false;btn.textContent='送出需求';
+      show('送出時發生問題，請稍後再試，或直接來電 0919-507-709、加 LINE（marcylin）與我們聯繫。','err');
+    });
+  });
+})();
+</script>
+</body>
+</html>
